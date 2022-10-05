@@ -49,6 +49,13 @@ function addListener(num) {
   })
 }
 
+document.getElementById(`decimal`)
+  .addEventListener('click', (event) => {
+    
+    output += '.'
+    updateOutput(output)
+  })
+
 
 function updateOutput(newValue) {
   let output = document.getElementById("output")
